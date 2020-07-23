@@ -109,7 +109,7 @@ namespace Servicio.Core.Data.BDMantenimiento
 
             using (var db = new BD_SistemaVentaContext())
             {
-                var listado = db.Usuario.Where(x => EF.Functions.Like(x.UsuarioName, "%" + pValor + "%"))
+                var listado = db.Usuario.Where(x => EF.Functions.Like(x.UsuarioName, "%" + pValor) && x.Estado == 1 && x.Status == 1)
                     .Select(x => new
                     {
                         Id = x.Id,
