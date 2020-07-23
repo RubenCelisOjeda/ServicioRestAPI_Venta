@@ -1,0 +1,33 @@
+﻿namespace Servicio.Core.Entity.DTO.Parametro
+{
+    /// <summary>
+    /// Entidad
+    /// </summary>
+    public class DtoParametroGrilla
+    {
+        /// <summary>
+        /// Contructor inicializa las propiedades
+        /// </summary>
+        public DtoParametroGrilla()
+        {
+            this.Id = 0;
+            this.NroGrupo = 0;
+            this.Nombre = string.Empty;
+            this.Valor1 = string.Empty;
+            this.Valor2 = string.Empty;
+            this.Valor3 = string.Empty;
+            this.Estado = false;
+        }
+
+        /// <summary>
+        /// Propiedades
+        /// </summary>
+        public int Id { get; set; }
+        public int? NroGrupo { get; set; }
+        public string Nombre { get; set; }
+        public string Valor1 { get; set; }
+        public string Valor2 { get; set; }
+        public string Valor3 { get; set; }
+        public bool? Estado { get; set; }
+    }
+}
